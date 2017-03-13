@@ -13,7 +13,7 @@ public:
     }
     vector_t(unsigned int size_);
     {
-        cout << "Enter size:";
+        cout << "Enter size: \n";
         cin >> size_;
     }
     vector_t(const vector_t& other);
