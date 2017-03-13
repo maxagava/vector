@@ -64,6 +64,7 @@ unsigned capacity();
     {
         cout << "Enter value: \n"
 	cin >> value;
+	vector.push_back(value);
     }
     auto operator[](unsigned int index) const noexcept -> int;
 	{
