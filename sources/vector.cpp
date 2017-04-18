@@ -60,7 +60,7 @@ auto vector_t::push_back(int value) -> void
   }
   else if (size_ +1 >= capacity_)
   {
-    capacity_ = capacity_ + 3;
+    capacity_ += 3;
       int*ptra_ = new int[capacity_];
     for(unsigned int i = 0; i< size_; i++)
     {
