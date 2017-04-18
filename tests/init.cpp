@@ -46,7 +46,7 @@ SCENARIO("vector operator =" , "[init]")
 	REQUIRE(a.capacity() == 4);
 	 b = a;
 	REQUIRE(b.size() == 3);
-	REQUIRE(b.capacity() == 5);
+	REQUIRE(b.capacity() == 4);
 	for(unsigned int i = 0; i < b.size(); i++)
 		b[i] == a[i];
 }
