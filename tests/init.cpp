@@ -42,7 +42,7 @@ SCENARIO("vector operator =" , "[init]")
 	a.push_back(1);
 	a.push_back(2);
 	a.push_back(3);
-	REQUIRE(a.size() == 4);
+	REQUIRE(a.size() == 3);
 	REQUIRE(a.capacity() == 5);
 	 b = a;
 	REQUIRE(b.size() == 4);
@@ -57,7 +57,7 @@ SCENARIO("vector pushback", "[init]")
 	REQUIRE(vec.capacity()==3);
 	vec.push_back(4);
 	REQUIRE(vec.size()==4);
-	REQUIRE(vec.capacity()==7);
+	REQUIRE(vec.capacity()==6);
 	REQUIRE(vec[0]==0);
 	REQUIRE(vec[1]==0);
 	REQUIRE(vec[2]==0);
