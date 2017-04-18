@@ -15,7 +15,7 @@ SCENARIO("vector with param", "[init]")
 	
 	for(unsigned int index = 0; index < vector.size(); ++ index)
 	
-		REQUIRE(vector[index]==0);
+		vector[index]==0;
 	
 }
 SCENARIO("vector init object ", "[init]")
