@@ -26,8 +26,8 @@ SCENARIO("vector init object ", "[init]")
 	a.push_back(1);
 	a.push_back(2);
 	a.push_back(3);
-	REQUIRE(a.size == 3);
-	REQUIRE(a.capacity == 4);
+	REQUIRE(a.size() == 3);
+	REQUIRE(a.capacity() == 4);
 	 vector_t b(a);
 	REQUIRE(b.size() == 3);
 	REQUIRE(b.capacity() == 4);
