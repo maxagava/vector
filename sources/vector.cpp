@@ -1,5 +1,5 @@
 #include "vector.hpp"
-vector_t::vector_t() noexept
+vector_t::vector_t() noexcept
 {
   size_ = 0;
   capacity_=0;
