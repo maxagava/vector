@@ -52,7 +52,7 @@ SCENARIO("vector operator =" , "[init]")
 }
 SCENARIO("vector pushback", "[init]")
 {
-	vector_t vec(3);
+	vector_t vector(3);
 	REQUIRE(vector.size()==3);
 	REQUIRE(vector.capacity()==3);
 	vector.push_back(4);
