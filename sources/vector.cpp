@@ -58,7 +58,7 @@ auto vector_t::push_back(int value) -> void
     capacity_=1;
     ptr_= new int[capacity_];
   }
-  else if (capacity_==size_)
+  else if (size_ +1 >= capacity_)
   {
     capacity_ = capacity_ + 3;
       int*ptra_ = new int[capacity_];
