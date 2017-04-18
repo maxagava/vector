@@ -36,21 +36,21 @@ auto vector_t::operator=(const vector_t& other)->vector_t&
     }
   return *this;
 }
-vector_t::~vector_t() noexcept;
+vector_t::~vector_t() noexcept
 {
   size_=0;
   capacity_=0;
   delete[] ptr_;
 }
-auto vector_t::size() const noexcept -> unsigned int;
+auto vector_t::size() const noexcept -> unsigned int
 {
   return size_;
 }
-auto vector_t::capacity() const noexcept -> unsigned int;
+auto vector_t::capacity() const noexcept -> unsigned int
 {
   return capacity_;
 }
-auto vector_t::push_back(int value) -> void;
+auto vector_t::push_back(int value) -> void
 {
   if (capacity_ == 0)
   {
@@ -71,7 +71,7 @@ auto vector_t::push_back(int value) -> void;
   }
   ptr_[size_++] = value;
 }
- auto vector_t::operator[](unsigned int index) const noexcept -> int;
+ auto vector_t::operator[](unsigned int index) const noexcept -> int
 {
   if(index >= size_)
     throw "Out of range!!!\n";
