@@ -3,15 +3,15 @@ vector_t::vector_t() noexcept
 {
   size_ = 0;
   capacity_=0;
-  ptr_=new int[capaacity_];
+  ptr_=new int[capacity_];
 }
 vector_t::vector_t(unsigned int size)
 {
   size_=size;
   capacity_=size;
-  ptr_new int[capacity_];
+  ptr_=new int[capacity_];
 }
-vector::vector_t(const vector_t& other)
+vector_t::vector_t(const vector_t& other)
 {
   size_ = other.size_;
   capacity_=other.capacity_;
@@ -56,11 +56,11 @@ auto vector_t::push_back(int value) -> void
   {
     delete[] ptr_;
     capacity_=1;
-    ptr_= new int[capacity_]
+    ptr_= new int[capacity_];
   }
   else if (capacity_==size_)
   {
-    capacity_ = capacity_ + 3
+    capacity_ = capacity_ + 3;
       int*ptra_ = new int[capacity_];
     for(unsigned int i = 0; i< size_; i++)
     {
