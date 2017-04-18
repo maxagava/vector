@@ -13,10 +13,12 @@ SCENARIO("vector with param", "[init]")
 	REQUIRE(vector.size() == 3);
 	REQUIRE(vector.capacity() == 3);
 	
-	for(unsigned int index = 0; index < vector.size(); ++ index){
+	for(unsigned int index = 0; index < vector.size(); ++ index)
+	
 		REQUIRE(vector[index]==0);
+	
 }
-SCENARIO("vector init object , "[init]")
+SCENARIO("vector init object ", "[init]")
 {
 	vector_t a;
 	REQUIRE(a.size()==0);
@@ -32,7 +34,7 @@ SCENARIO("vector init object , "[init]")
 	for(unsigned int i = 0; i < b.size(); i++)
 		b[i] == a[i];
 }
-SCENARIO("vector operator = , "[init]")
+SCENARIO("vector operator =" , "[init]")
 {
 	vector_t b(4), a;
 	REQUIRE(a.size()==0);
