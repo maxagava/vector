@@ -9,9 +9,9 @@ SCENARIO("vector init", "[init]")
 }
 SCENARIO("vector with param", "[init]")
 {
-	vector_t vector(3);
-	REQUIRE(vector.size() == 3);
-	REQUIRE(vector.capacity() == 3);
+	vector_t vector(4);
+	REQUIRE(vector.size() == 4);
+	REQUIRE(vector.capacity() == 4);
 	
 	for(unsigned int index = 0; index < vector.size(); ++ index)
 	
@@ -42,10 +42,10 @@ SCENARIO("vector operator =" , "[init]")
 	a.push_back(1);
 	a.push_back(2);
 	a.push_back(3);
-	REQUIRE(a.size() == 2);
+	REQUIRE(a.size() == 3);
 	REQUIRE(a.capacity() == 4);
 	 b = a;
-	REQUIRE(b.size() == 2);
+	REQUIRE(b.size() == 3);
 	REQUIRE(b.capacity() == 4);
 	for(unsigned int i = 0; i < b.size(); i++)
 		b[i] == a[i];
@@ -53,15 +53,15 @@ SCENARIO("vector operator =" , "[init]")
 SCENARIO("vector pushback", "[init]")
 {
 	vector_t vec(3);
-	REQUIRE(vec.size()==2);
+	REQUIRE(vec.size()==3);
 	REQUIRE(vec.capacity()==3);
 	vec.push_back(4);
-	REQUIRE(vec.size()==2);
+	REQUIRE(vec.size()==4);
 	REQUIRE(vec.capacity()==6);
 	REQUIRE(vec[0]==0);
 	REQUIRE(vec[1]==0);
 	REQUIRE(vec[2]==0);
-	REQUIRE(vec[3]==5);
+	REQUIRE(vec[3]==4);
 }
 	
 	
