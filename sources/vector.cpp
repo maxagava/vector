@@ -70,7 +70,6 @@ auto push_back(int value) -> void;
     ptr_=ptra_;
   }
   ptr_[size_] = value;
-  size_++;
 }
  auto operator[](unsigned int index) const noexcept -> int;
 {
