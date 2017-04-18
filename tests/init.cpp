@@ -53,15 +53,15 @@ SCENARIO("vector operator =" , "[init]")
 SCENARIO("vector pushback", "[init]")
 {
 	vector_t vec(3);
-	REQUIRE(vec.size()==3);
-	REQUIRE(vec.capacity()==3);
-	vec.push_back(4);
-	REQUIRE(vec.size()==4);
-	REQUIRE(vec.capacity()==6);
-	REQUIRE(vec[0]==0);
-	REQUIRE(vec[1]==0);
-	REQUIRE(vec[2]==0);
-	REQUIRE(vec[3]==4);
+	REQUIRE(vector.size()==3);
+	REQUIRE(vector.capacity()==3);
+	vector.push_back(4);
+	REQUIRE(vector.size()==4);
+	REQUIRE(vector.capacity()==6);
+	REQUIRE(vector[0]==0);
+	REQUIRE(vector[1]==0);
+	REQUIRE(vector[2]==0);
+	REQUIRE(vector[3]==4);
 }
 	
 	
