@@ -42,8 +42,8 @@ SCENARIO("vector operator =" , "[init]")
 	a.push_back(1);
 	a.push_back(2);
 	a.push_back(3);
-	REQUIRE(a.size == 4);
-	REQUIRE(a.capacity == 5);
+	REQUIRE(a.size() == 4);
+	REQUIRE(a.capacity() == 5);
 	 b = a;
 	REQUIRE(b.size() == 4);
 	REQUIRE(b.capacity() == 5);
