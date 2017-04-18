@@ -43,7 +43,7 @@ SCENARIO("vector operator =" , "[init]")
 	a.push_back(2);
 	a.push_back(3);
 	REQUIRE(a.size() == 3);
-	REQUIRE(a.capacity() == 5);
+	REQUIRE(a.capacity() == 4);
 	 b = a;
 	REQUIRE(b.size() == 4);
 	REQUIRE(b.capacity() == 5);
